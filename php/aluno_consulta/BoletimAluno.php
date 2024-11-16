@@ -4,6 +4,8 @@
     include "../banco/conexao.php";
 
     $alunoId = 1; 
+    $semestre = 1;
+    $anoAtividade = 2024;
     $sql = "SELECT t.codigo AS turmaCodigo, t.identificadorTurma, d.codigo AS disciplinaCodigo, d.nomeDisciplina
             FROM aluno a
             INNER JOIN turma t ON a.Turma_codigo = t.codigo AND a.Turma_Modalidade_codigo = t.Modalidade_codigo
@@ -15,6 +17,29 @@
     $stmt->bindParam(':alunoId', $alunoId, PDO::PARAM_INT);
     $stmt->execute();
     $disciplinas = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    $sqlNotas = "SELECT notaAluno 
+                FROM Aluno_has_Disciplina ad
+                INNER JOIN aluno a ON a.codigo = ad.Aluno_codigo
+                INNER JOIN disciplina d ON d.codigo = ad.Disciplina_codigo
+                WHERE ad.semestre = :semestre
+                    AND ad.anoAtividade = :anoAtividade
+                ORDER BY ad.Aluno_codigo ASC;";
+    $comando = $pdo->prepare($sqlNotas);
+    $comando->bindParam(':semestre', $semestre, PDO::PARAM_INT);
+    $comando->bindParam(':anoAtividade', $anoAtividade, PDO::PARAM_INT);
+    $comando->execute();
+    $notas = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+    $soma = 0;
+    foreach ($notas as $nota){
+        $soma += $nota["notaAluno"];
+    }
+    $media = $soma / count($notas);
+
+    echo "<div style='color: white;'>Lista de notas = ";
+    echo var_dump($notas) . "<br>";
+    echo "Média = " . $media . "</div>";
 ?>
 
 <main class="container-fluid gx-0 my-5">
