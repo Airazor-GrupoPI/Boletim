@@ -162,6 +162,11 @@
                                 <p class="card-text">P3: <?php echo number_format((float)$P3, 2, '.', ''); ?></p>
                             <?php endif; ?>
                             <p class="card-text"> Media do Semestre: <?php echo number_format((float)($P1 + $P2 + ($T1 + $T2)) / 3, 2, '.', ''); ?> </p> 
+                            <?php if (($P1 + $P2 + ($T1 + $T2)) / 3 >= 6): ?>
+                                <h2 class="card-text, text-success"> Aprovado! </h2> 
+                            <?php else: ?>        
+                                <h2 class="card-text, text-danger"> Reprovado </h2>       
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -172,8 +177,6 @@
 </body>
 </html>
 
-<?php
-        include "../../php/rodape.php";
-?>
+
 
 
