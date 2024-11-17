@@ -1,6 +1,6 @@
 <?php
     function adicionar($tabela, $campos, $listavalores){
-        include "../banco/conexao.php";
+        include "banco/conexao.php";
 
         $listacampos = explode(",", $campos);
 

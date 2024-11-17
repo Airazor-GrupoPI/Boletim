@@ -23,6 +23,10 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Usuario` (
   PRIMARY KEY (`codigo`)
 ) ENGINE = InnoDB;
 
+INSERT INTO `usuario` (`codigo`, `loginUsuario`, `senhaUsuario`) VALUES
+(1, 'admin', 'senhaAdmin'),
+(2, 'aluno1', 'senhaAluno1');
+
 -- -----------------------------------------------------
 -- Table `boletim`.`Modalidade`
 -- -----------------------------------------------------
@@ -52,15 +56,64 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Turma` (
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
 
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (0, "1A", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (1, "1B", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (2, "1C", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (3, "1D", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (4, "2A", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (5, "2B", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (6, "2C", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (7, "2D", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (8, "3A", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (9, "3B", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (10, "3C", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (11, "3D", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (12, "4A", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (13, "4B", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (14, "4C", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (15, "4D", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (16, "5A", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (17, "5B", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (18, "5C", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (19, "5D", 0);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (20, "6A", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (21, "6B", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (22, "6C", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (23, "6D", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (24, "7A", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (25, "7B", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (26, "7C", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (27, "7D", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (28, "8A", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (29, "8B", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (30, "8C", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (31, "8D", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (32, "9A", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (33, "9B", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (34, "9C", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (35, "9D", 1);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (36, "1A", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (37, "1B", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (38, "1C", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (39, "1D", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (40, "2A", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (41, "2B", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (42, "2C", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (43, "2D", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (44, "3A", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (45, "3B", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (46, "3C", 2);
+INSERT INTO `boletim`.`Turma` (codigo, identificadorTurma, Modalidade_codigo) VALUES (47, "3D", 2);
+
 -- -----------------------------------------------------
 -- Table `boletim`.`Aluno`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `boletim`.`Aluno` (
-  `codigo` INT NOT NULL,
+  `codigo` INT(11) NOT NULL,
   `nomeAluno` VARCHAR(45) NOT NULL,
   `emailAluno` VARCHAR(45) NOT NULL,
-  `Turma_codigo` INT NOT NULL,
-  `Turma_Modalidade_codigo` INT NOT NULL,
+  `Turma_codigo` INT(11) NOT NULL,
+  `Turma_Modalidade_codigo` INT(11) NOT NULL,
   PRIMARY KEY (`codigo`, `Turma_codigo`, `Turma_Modalidade_codigo`),
   INDEX `fk_Aluno_Turma1_idx` (`Turma_codigo` ASC, `Turma_Modalidade_codigo` ASC),
   CONSTRAINT `fk_Aluno_Turma1`
@@ -69,6 +122,10 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Aluno` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
+
+INSERT INTO `aluno` (`codigo`, `nomeAluno`, `emailAluno`, `Turma_codigo`, `Turma_Modalidade_codigo`) VALUES
+(1, 'João Silva', 'joao.silva@example.com', 1, 0),
+(2, 'Maria Souza', 'maria.souza@example.com', 2, 1);
 
 -- -----------------------------------------------------
 -- Table `boletim`.`Responsavel`
@@ -79,6 +136,11 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Responsavel` (
   `emailResponsavel` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`codigo`)
 ) ENGINE = InnoDB;
+
+INSERT INTO `responsavel` (`codigo`, `nomeResponsavel`, `emailResponsavel`) VALUES
+(1, 'Carlos Silva', 'carlos.silva@example.com'),
+(2, 'Ana Souza', 'ana.souza@example.com'),
+(3, 'cleyton', 'cleyton@gmail.com');
 
 -- -----------------------------------------------------
 -- Table `boletim`.`Professor`
@@ -91,6 +153,10 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Professor` (
   PRIMARY KEY (`codigo`)
 ) ENGINE = InnoDB;
 
+INSERT INTO `professor` (`codigo`, `nomeProfessor`, `emailProfessor`, `titulacao`) VALUES
+(1, 'Prof. Alberto', 'alberto.prof@example.com', 'Mestre'),
+(2, 'Prof. Clara', 'clara.prof@example.com', 'Doutora');
+
 -- -----------------------------------------------------
 -- Table `boletim`.`Disciplina`
 -- -----------------------------------------------------
@@ -101,6 +167,10 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Disciplina` (
   `mediaParaPassar` FLOAT NOT NULL,
   PRIMARY KEY (`codigo`)
 ) ENGINE = InnoDB;
+
+INSERT INTO `disciplina` (`codigo`, `nomeDisciplina`, `cargaHoraria`, `mediaParaPassar`) VALUES
+(1, 'Matemática', 80, 6),
+(2, 'Português', 60, 6);
 
 -- -----------------------------------------------------
 -- Table `boletim`.`Conteudo`
@@ -119,28 +189,75 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Conteudo` (
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
 
+INSERT INTO `conteudo` (`codigo`, `nomeConteudo`, `cargaHorariaConteudo`, `Disciplina_codigo`) VALUES
+(1, 'Geometria', 20, 1),
+(2, 'Gramática', 15, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `frequencia`
+--
+
+CREATE TABLE IF NOT EXISTS `boletim`.`Frequencia` (
+  `Aluno_codigo` int(11) NOT NULL,
+  `Disciplina_codigo` int(11) NOT NULL,
+  `anoAtividade` int(11) NOT NULL,
+  `semestre` int(11) NOT NULL,
+  `faltasAluno` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `frequencia`
+--
+
+INSERT INTO `frequencia` (`Aluno_codigo`, `Disciplina_codigo`, `anoAtividade`, `semestre`, `faltasAluno`) VALUES
+(1, 1, 2024, 1, 3),
+(1, 1, 2024, 2, 5),
+(1, 2, 2024, 1, 2),
+(1, 2, 2024, 2, 4),
+(2, 1, 2024, 1, 1),
+(2, 1, 2024, 2, 2),
+(2, 2, 2024, 1, 0),
+(2, 2, 2024, 2, 1),
+(3, 1, 2024, 1, 4),
+(3, 1, 2024, 2, 5),
+(3, 2, 2024, 1, 3),
+(3, 2, 2024, 2, 6);
+
+-- --------------------------------------------------------
+
 -- -----------------------------------------------------
 -- Table `boletim`.`Aluno_has_Disciplina`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `boletim`.`Aluno_has_Disciplina` (
-  `Aluno_codigo` INT NOT NULL,
-  `Disciplina_codigo` INT NOT NULL,
+  `Aluno_codigo` INT(11) NOT NULL,
+  `Disciplina_codigo` INT(11) NOT NULL,
   `notaAluno` FLOAT NULL,
-  `faltasAluno` INT NOT NULL,
-  PRIMARY KEY (`Aluno_codigo`, `Disciplina_codigo`),
+  `tipoAtividade` enum('P1','P2','P3','T1','T2') NOT NULL,
+  `anoAtividade` year(4) NOT NULL,
+  `semestre` tinyint(1) NOT NULL,
+  PRIMARY KEY (`Aluno_codigo`, `Disciplina_codigo`, `tipoAtividade`, `anoAtividade`, `semestre`),
   INDEX `fk_Aluno_has_Disciplina_Disciplina1_idx` (`Disciplina_codigo` ASC),
   INDEX `fk_Aluno_has_Disciplina_Aluno1_idx` (`Aluno_codigo` ASC),
-  CONSTRAINT `fk_Aluno_has_Disciplina_Aluno1`
-    FOREIGN KEY (`Aluno_codigo`)
-    REFERENCES `boletim`.`Aluno` (`codigo`)
-    ON DELETE NO ACTION
+  CONSTRAINT `fk_Aluno_has_Disciplina_Aluno1` 
+    FOREIGN KEY (`Aluno_codigo`) 
+    REFERENCES `boletim`.`Aluno` (`codigo`) 
+    ON DELETE NO ACTION 
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Aluno_has_Disciplina_Disciplina1`
-    FOREIGN KEY (`Disciplina_codigo`)
-    REFERENCES `boletim`.`Disciplina` (`codigo`)
-    ON DELETE NO ACTION
+  CONSTRAINT `fk_Aluno_has_Disciplina_Disciplina1` 
+    FOREIGN KEY (`Disciplina_codigo`) 
+    REFERENCES `boletim`.`Disciplina` (`codigo`) 
+    ON DELETE NO ACTION 
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
+
+INSERT INTO `aluno_has_disciplina` (`Aluno_codigo`, `Disciplina_codigo`, `notaAluno`, `tipoAtividade`, `anoAtividade`, `semestre`) VALUES
+(1, 1, 8.5, 'P1', '2024', 1),
+(1, 1, 8, 'P1', '2024', 2),
+(1, 1, 6.5, 'P2', '2024', 1),
+(1, 1, 9, 'P3', '2024', 1),
+(1, 1, 7, 'T1', '2024', 1);
 
 -- -----------------------------------------------------
 -- Table `boletim`.`Modalidade_has_Disciplina`
@@ -163,6 +280,10 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Modalidade_has_Disciplina` (
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
 
+INSERT INTO `modalidade_has_disciplina` (`Modalidade_codigo`, `Disciplina_codigo`) VALUES
+(0, 1),
+(1, 2);
+
 -- -----------------------------------------------------
 -- Table `boletim`.`Professor_has_Disciplina`
 -- -----------------------------------------------------
@@ -184,6 +305,10 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Professor_has_Disciplina` (
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
 
+INSERT INTO `professor_has_disciplina` (`Professor_codigo`, `Disciplina_codigo`) VALUES
+(1, 1),
+(2, 2);
+
 -- -----------------------------------------------------
 -- Table `boletim`.`Turma_has_Professor`
 -- -----------------------------------------------------
@@ -204,6 +329,24 @@ CREATE TABLE IF NOT EXISTS `boletim`.`Turma_has_Professor` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
+
+INSERT INTO `turma_has_professor` (`Turma_codigo`, `Professor_codigo`) VALUES
+(1, 1),
+(2, 2);
+
+--
+-- Índices de tabela `frequencia`
+--
+ALTER TABLE `frequencia`
+  ADD PRIMARY KEY (`Aluno_codigo`,`Disciplina_codigo`,`anoAtividade`,`semestre`),
+  ADD KEY `fk_Frequencia_Disciplina` (`Disciplina_codigo`);
+
+--
+-- Restrições para tabelas `frequencia`
+--
+ALTER TABLE `frequencia`
+  ADD CONSTRAINT `fk_Frequencia_Aluno` FOREIGN KEY (`Aluno_codigo`) REFERENCES `aluno` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_Frequencia_Disciplina` FOREIGN KEY (`Disciplina_codigo`) REFERENCES `disciplina` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

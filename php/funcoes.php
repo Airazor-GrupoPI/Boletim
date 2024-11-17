@@ -11,7 +11,7 @@
         session_start();
 
         if(!isset($_SESSION["admin"])) {
-            header("Location: http://localhost/PI-FatecMarilia-Termo2/PagLogin.html");
+            header("Location: ../../PagLogin.php");
         }
     }
 

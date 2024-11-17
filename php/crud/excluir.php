@@ -1,6 +1,6 @@
 <?php
     function deletar($tabela, $codigo){
-        include "banco/conexao.php";
+        include "../banco/conexao.php";
 
         $sql  = "DELETE FROM $tabela WHERE codigo = :codigo";
         $codigoTratado = htmlspecialchars($codigo);
@@ -12,4 +12,8 @@
 
         return $sucesso;
     }
+
+    deletar($_GET["tabela"], $_GET["codigo"]);
+
+    header("Location: ".$_GET["caminho"]);
 ?>

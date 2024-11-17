@@ -1,4 +1,4 @@
-<footer id="footerCopy">
+<footer id="footerCopy" class="fixed-bottom">
     <div class="container-fluid gx-0">
         <div>
             <div class="col-12" id="txtFooter">

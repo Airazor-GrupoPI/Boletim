@@ -5,8 +5,8 @@
 
     $alunoID = 1;  
 
-    $semestre = 3;    /* valor default */  
-    $anoAtividade = 2025;     /* valor default */  
+    $semestre = 1;    /* valor default */  
+    $anoAtividade = 2024;     /* valor default */  
 
 
 

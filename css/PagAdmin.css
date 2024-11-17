@@ -5,8 +5,6 @@
     flex-flow: column;
     text-align: center;
     border-radius: 5px;
-/*    padding: 10px;*/
-    
 }
 
 #menuAdm {
@@ -27,21 +25,39 @@
     
 }
 
-.menu-Card a{
+.menu-Card div button{
     text-align: center;
     background-color: #6cf3ca;
     display: block;
     padding: 10px;
     text-decoration: none;
     color: #000; 
-    border-bottom:3px solid #EDEDED; 
     align-items: center;
     font-size: large;
 }
 
-.menu-Card a:hover { 
+.menu-Card div button:hover { 
     background-color:#D6D6D6;
     color: #363535;
+}
+
+.dropdown button{
+    border: none;
+    border-radius: 6px;
+}
+
+#botaoRetorno{
+    background-color: #288a87;
+    border-radius: 8px;
+    border: none;
+    transition: 500ms;
+    color: #fff;
+    text-decoration: none;
+}
+
+#botaoRetorno:hover{
+    background-color: #034f73;
+    transition: 500ms;
 }
 
 /*-------Estilo para a página de manutenção da Administração -------------------*/
