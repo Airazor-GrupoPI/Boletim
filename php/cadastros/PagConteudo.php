@@ -61,6 +61,4 @@
         </div>
     </main>
     
-    <?php
-        include "../../php/rodape.php";
-    ?>
+ 
